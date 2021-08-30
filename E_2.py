@@ -3,7 +3,6 @@
 #29 08 2021
 
 import cv2
-import numpy as np
 import matplotlib.pyplot as plt
 
 '''Paso uno'''
