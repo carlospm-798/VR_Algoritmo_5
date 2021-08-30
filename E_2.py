@@ -30,14 +30,14 @@ ig5 = cv2.multiply(ig,2)
 ig5 = cv2.add(ig5, 2)
 [U,V] = ig5.shape[0:2]
 
-'''Paso tres'''
+'''Calculo de histograma'''
 hist = cv2.calcHist([ig],[0],None,[256],[0,256]).flatten()/(M*N)
 hist2 = cv2.calcHist([ig2],[0],None,[256],[0,256]).flatten()/(O*P)
 hist3 = cv2.calcHist([ig3],[0],None,[256],[0,256]).flatten()/(Q*R)
 hist4 = cv2.calcHist([ig4],[0],None,[256],[0,256]).flatten()/(S*T)
 hist5 = cv2.calcHist([ig5],[0],None,[256],[0,256]).flatten()/(U*V)
 
-'''Paso cuatro'''
+'''Ecualización de imagenes'''
 im_eq = cv2.equalizeHist(ig2)
 im_eq2 = cv2.equalizeHist(ig3)
 im_eq3 = cv2.equalizeHist(ig4)
